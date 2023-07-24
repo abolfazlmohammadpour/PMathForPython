@@ -64,3 +64,17 @@ Output
 3
 ```
 ---
+### Calculating LCM(Least Common Multiple) Of A List Of Numbers From ... To ...
+main.py
+```py
+from Source import PMath
+
+print(PMath.Calculating_LCM(1, 100, [33, 39, 69]))
+print(PMath.Calculating_LCM(1, 1000, [33, 39, 69]))
+```
+Output
+```
+None
+9867
+```
+---
