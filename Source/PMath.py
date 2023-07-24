@@ -36,7 +36,7 @@ def Calculating_Multiples(Number: int, From: int, To: int) -> tuple:
     return tuple(Multiples)
 
 
-def Calculating_GCD(*Arguments) -> int:
+def Calculating_GCD(Arguments: list) -> int:
     """This Function Calculates Greatest Common Devisor Of Input Arguments"""
     DivisorsOfArguments = dict()
     CommonDivisorsOfArgument = set()
