@@ -53,7 +53,7 @@ def Calculating_GCD(Arguments: list) -> int:
     return GCD
 
 
-def Calculating_LCM(From: int, To: int, *Arguments) -> int:
+def Calculating_LCM(From: int, To: int, Arguments: list) -> int:
     """This Function Calculates Least Common Multiple Of Input Arguments From <From> Argument To <To> Argument"""
     MultiplesOfArguments = dict()
     CommonMultiplesOfArguments = set()
