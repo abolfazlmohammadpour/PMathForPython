@@ -40,7 +40,7 @@ def Calculating_GCD(Arguments: list) -> int:
     """This Function Calculates Greatest Common Devisor Of Input Arguments"""
     DivisorsOfArguments = dict()
     CommonDivisorsOfArguments = set()
-    GCD = int()
+    GCD = None
     # Calculating Divisors Of Arguments
     for Argument in Arguments:
         DivisorsOfArguments[Argument] = set(Calculating_Divisors(Argument))
