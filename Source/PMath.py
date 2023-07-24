@@ -39,17 +39,23 @@ def Calculating_Multiples(Number: int, From: int, To: int) -> tuple:
 def Calculating_GCD(Arguments: list) -> int:
     """This Function Calculates Greatest Common Devisor Of Input Arguments"""
     DivisorsOfArguments = dict()
-    CommonDivisorsOfArgument = set()
+    CommonDivisorsOfArguments = set()
     GCD = int()
     # Calculating Divisors Of Arguments
     for Argument in Arguments:
         DivisorsOfArguments[Argument] = set(Calculating_Divisors(Argument))
     # Calculating Common Divisors Of Arguments
-    CommonDivisorsOfArgument = DivisorsOfArguments[Arguments[0]]
+    CommonDivisorsOfArguments = DivisorsOfArguments[Arguments[0]]
     for Argument in Arguments:
-        CommonDivisorsOfArgument &= DivisorsOfArguments[Argument]
+        CommonDivisorsOfArguments &= DivisorsOfArguments[Argument]
     # Calculating Greates Common Divisors Of Arguments
-    GCD = max(CommonDivisorsOfArgument)
+    CommonDivisorsOfArguments = list(CommonDivisorsOfArguments)
+    if (len(CommonDivisorsOfArguments) > 0):
+        GCD = CommonDivisorsOfArguments[0]
+    for CommonDivisorOfArgument in CommonDivisorsOfArguments:
+        if (CommonDivisorOfArgument > GCD):
+            GCD = CommonDivisorOfArgument
+
     return GCD
 
 
