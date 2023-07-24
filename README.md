@@ -52,3 +52,15 @@ Output
 (-43, -86, -129, -172, -215, -258, -301, -344)
 ```
 ---
+### Calculating GCD(Greatest Common Divisor) Of A List Of Numbers
+main.py
+```py
+from Source import PMath
+
+print(PMath.Calculating_GCD([-33, 39, 69]))
+```
+Output
+```
+3
+```
+---
