@@ -51,3 +51,21 @@ def Calculating_GCD(*Arguments) -> int:
     # Calculating Greates Common Divisors Of Arguments
     GCD = max(CommonDivisorsOfArgument)
     return GCD
+
+
+def Calculating_LCM(From: int, To: int, *Arguments) -> int:
+    """This Function Calculates Least Common Multiple Of Input Arguments From <From> Argument To <To> Argument"""
+    MultiplesOfArguments = dict()
+    CommonMultiplesOfArguments = set()
+    LCM = int()
+    # Calculating Multiples Of Arguments
+    for Argument in Arguments:
+        MultiplesOfArguments[Argument] = set(
+            Calculating_Multiples(Argument, From, To))
+    # Calculating Common Multiples Of Arguments
+    CommonMultiplesOfArguments = MultiplesOfArguments[Arguments[0]]
+    for Argument in Arguments:
+        CommonMultiplesOfArguments &= MultiplesOfArguments[Argument]
+    # Calculating Least Common Multiples Of Arguments
+    LCM = min(CommonMultiplesOfArguments)
+    return LCM
