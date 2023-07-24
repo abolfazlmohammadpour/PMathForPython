@@ -73,5 +73,11 @@ def Calculating_LCM(From: int, To: int, Arguments: list) -> int:
     for Argument in Arguments:
         CommonMultiplesOfArguments &= MultiplesOfArguments[Argument]
     # Calculating Least Common Multiples Of Arguments
-    LCM = min(CommonMultiplesOfArguments)
+    CommonMultiplesOfArguments = list(CommonMultiplesOfArguments)
+    if (len(CommonMultiplesOfArguments) > 0):
+        LCM = CommonMultiplesOfArguments[0]
+    for CommonMultipleOfArgument in CommonMultiplesOfArguments:
+        if (CommonMultipleOfArgument < LCM):
+            LCM = CommonMultipleOfArgument
+
     return LCM
