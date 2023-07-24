@@ -63,7 +63,7 @@ def Calculating_LCM(From: int, To: int, Arguments: list) -> int:
     """This Function Calculates Least Common Multiple Of Input Arguments From <From> Argument To <To> Argument"""
     MultiplesOfArguments = dict()
     CommonMultiplesOfArguments = set()
-    LCM = int()
+    LCM = None
     # Calculating Multiples Of Arguments
     for Argument in Arguments:
         MultiplesOfArguments[Argument] = set(
