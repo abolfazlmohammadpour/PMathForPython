@@ -11,13 +11,13 @@
 #### And Then You Have To Import PMath In Main File Of Your Project.
 ```
 Project
-├─ main.py
 └─ Source
    └─ PMath.py
+   └─ main.py
 ```
 main.py
 ```py
-from Source import PMath
+import PMath
 ```
 #### Now You Can Use PMath In Your Project And Enjoying It.
 ---
@@ -27,7 +27,7 @@ from Source import PMath
 ### Calculating Divisors Of A Number With PMath
 main.py
 ```py
-from Source import PMath
+import PMath
 
 print(PMath.Calculating_Divisors(27))
 print(PMath.Calculating_Divisors(-43))
@@ -41,7 +41,7 @@ Output
 ### Calculating Multiples Of A Number With PMath
 main.py
 ```py
-from Source import PMath
+import PMath
 
 print(PMath.Calculating_Multiples(27, From=1, To=5))
 print(PMath.Calculating_Multiples(-43, 1, 8))
@@ -55,7 +55,7 @@ Output
 ### Calculating GCD(Greatest Common Divisor) Of A List Of Numbers
 main.py
 ```py
-from Source import PMath
+import PMath
 
 print(PMath.Calculating_GCD([-33, 39, 69]))
 ```
@@ -67,7 +67,7 @@ Output
 ### Calculating LCM(Least Common Multiple) Of A List Of Numbers From ... To ...
 main.py
 ```py
-from Source import PMath
+import PMath
 
 print(PMath.Calculating_LCM(1, 100, [33, 39, 69]))
 print(PMath.Calculating_LCM(1, 1000, [33, 39, 69]))
