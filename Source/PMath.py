@@ -19,16 +19,16 @@ def Calculating_Multiples(Number: int, From: int, To: int) -> tuple:
     """This Function Calculates Multiples Of <Number> Argument From <From> Argument To <To Argument>"""
     Multiples = list()
     if (Number == 0):
-        raise "The Input Argument Does Not Have To Be Zero"
+        raise "The Argument <Number> Does Not Have To Be Zero"
     elif (Number > 0):
-        if (From > To):
-            raise "The <From> Argument Does Not Have To Be Greater Than <To> Argument"
+        if (From >= To):
+            raise "The Argument <From> Does Not Have To Be Greater Than Argument <To> Or Equal"
         else:
             for Counter in range(From, (To + 1)):
                 Multiples.append((Number * Counter))
     elif (Number < 0):
-        if (From > To):
-            raise "The <From> Argument Does Not Have To Be Greater Than <To> Argument"
+        if (From >= To):
+            raise "The Argument <From> Does Not Have To Be Greater Than Argument <To> Or Equal"
         else:
             for Counter in range(From, (To + 1)):
                 Multiples.append((Number * Counter))
